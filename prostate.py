@@ -87,7 +87,11 @@ if is_t:
     result = 'Bone Metastasis'
 else:
     result = 'Without Bone Metastasis'
-st.markdown('## Predict:  '+str(result))
+
+if st.button('Predict'):
+    st.markdown('## Predict:  '+str(result))
+    if result = 'Without Bone Metastasis':
+              st.balloons()
 #st.markdown('## The risk of bone metastases is '+str(prob/0.0078*1000//1/1000)+' times higher than the average risk .')
 
 #排版占行
