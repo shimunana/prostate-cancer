@@ -28,6 +28,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.tree import DecisionTreeClassifier
 
 #应用标题
+st.set_page_config(page_title='Application')
 st.title('Application of Machine Learning Methods to Predict Bone Metastases in Prostate Cancer Patients')
 
 
