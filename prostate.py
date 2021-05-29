@@ -28,7 +28,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.tree import DecisionTreeClassifier
 
 #应用标题
-st.set_page_config(page_title='Application')
+st.set_page_config(page_title='Pre BM in PCa')
 st.title('Application of Machine Learning Methods to Predict Bone Metastases in Prostate Cancer Patients')
 
 
@@ -98,15 +98,16 @@ st.title("")
 st.title("")
 #st.warning('This is a warning')
 #st.error('This is an error')
-map_data = pd.DataFrame(
-    [[28.65, 115.79]],
-    columns=['lat', 'lon'])
+#地图
+#map_data = pd.DataFrame(
+#    [[28.65, 115.79]],
+#    columns=['lat', 'lon'])
 
 st.info('Information of the model: Auc: 0.9546 ;Accuracy: 0.8883 ;Sensitivity(recall): 0.8975 ;Specificity :0.8880 ')
 st.success('Affiliation: The First Affiliated Hospital of Nanchang University, Nanchnag university. ')
-if st.button('Click for location'):
-    st.balloons()
-    st.map(map_data)
+#if st.button('Click for location'):
+#    st.balloons()
+#    st.map(map_data)
 
 
 
