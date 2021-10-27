@@ -41,6 +41,12 @@ N_stage =map[N_stage]
 Gleason_score =map[Gleason_score]
 Marital_status =map[Marital_status]
 
+# 数据读取，特征标注
+thyroid_train = pd.read_csv('train.csv', low_memory=False)
+thyroid_train['BM'] = thyroid_train['BM'].apply(lambda x : +1 if x==1 else 0)
+features = ['Age','Race','Grade','T_stage','N_stage','PSA','Gleason_score','Marital_status']
+target = 'BM'
+
 
 XGB = XGBClassifier(random_state=32,max_depth=3,n_estimators=34)
 XGB.fit(thyroid_train[features],thyroid_train[target])
