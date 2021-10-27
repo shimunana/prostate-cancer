@@ -42,11 +42,11 @@ Gleason_score =map[Gleason_score]
 Marital_status =map[Marital_status]
 
 
-
+XGB = XGBClassifier(random_state=32,max_depth=3,n_estimators=34)
+XGB.fit(thyroid_train[features],thyroid_train[target])
 #读存储的模型
-
-with open('XGB.pickle', 'rb') as f:
-    XGB = pickle.load(f)
+#with open('XGB.pickle', 'rb') as f:
+#    XGB = pickle.load(f)
 
 
 sp = 0.5
