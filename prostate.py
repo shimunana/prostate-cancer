@@ -29,6 +29,8 @@ Gleason_score = st.sidebar.selectbox("Gleason score",('<=6','7','8','>=9'))
 PSA = st.sidebar.slider("PSA(ng/ml)", 0.1, 98.0, value=10.0, step=0.1)
 Marital_status = st.sidebar.selectbox("Marital status",('Married','Unmarried'))
 
+st.sidebar.markdown('#### All rights reserved') 
+st.sidebar.markdown('For communication and cooperation, please contact liuwencaincu@163.com, Liu Wencai(刘文彩), Nanchang university(南昌大学)')
 # str_to_int
 
 map = {'<=39':0,'40-49':1,'50-59':2,'60-69':3,'>=70':4,'American Indian/Alaska Native':1,'Asian or Pacific Islander':2,'Black':3,
