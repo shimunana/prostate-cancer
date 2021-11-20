@@ -32,7 +32,7 @@ Marital_status = st.sidebar.selectbox("Marital status",('Married','Unmarried'))
 st.sidebar.markdown('#  ')
 st.sidebar.markdown('#  ')
 st.sidebar.markdown('##### All rights reserved') 
-st.sidebar.markdown('##### For communication and cooperation, please contact liuwencaincu@163.com, Liu Wencai(刘文彩), Nanchang university')
+st.sidebar.markdown('##### For communication and cooperation, please contact liuwencaincu@163.com, Liu Wencai, Nanchang university')
 # str_to_int
 
 map = {'<=39':0,'40-49':1,'50-59':2,'60-69':3,'>=70':4,'American Indian/Alaska Native':1,'Asian or Pacific Islander':2,'Black':3,
