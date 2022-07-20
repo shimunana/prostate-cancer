@@ -55,11 +55,10 @@ target = 'BM'
 ros = RandomOverSampler(random_state=12, sampling_strategy='auto')
 X_ros, y_ros = ros.fit_resample(thyroid_train[features], thyroid_train[target])
 
-XGB = XGBClassifier(random_state=32,max_depth=3,n_estimators=34)
-XGB.fit(X_ros, y_ros)
+XGB = XGBClassifier(random_state=32,max_depth=3,n_es
 #读存储的模型
 #with open('XGB.pickle', 'rb') as f:
-#    XGB = pickle.load(f)
+#    XGB = pickle
 
 
 sp = 0.5
@@ -76,8 +75,7 @@ if st.button('Predict'):
     st.markdown('## Risk grouping for Bone Metastasis:  '+str(result))
     if result == 'Low Risk':
         st.balloons()
-    st.markdown('## Probability of High risk group:  '+str(prob)+'%')
-
+    st.markdown('## Probability of High risk group
 
 
 
